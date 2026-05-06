@@ -1,0 +1,506 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Castillo Galería Mediano</title>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+  </head>
+
+  <body>
+    <a-scene>
+
+      <!-- CÁMARA -->
+      <a-entity position="0 2.5 18">
+        <a-camera wasd-controls look-controls></a-camera>
+      </a-entity>
+
+      <!-- SUELO EXTERIOR -->
+      <a-plane position="0 0 0" rotation="-90 0 0" width="70" height="70" color="#7BC8A4"></a-plane>
+
+      PAREDES
+
+      <!-- REEMPLAZA TU PARED TRASERA POR ESTO -->
+<a-box position="-9 4.5 -15" width="12" height="10" depth="1" color="#B0B0B0"></a-box>
+<a-box position="9 4.5 -15" width="12" height="10" depth="1" color="#B0B0B0"></a-box>
+
+<!--  PUERTA TRASERA -->
+<a-box position="0 4 -15.1" width="6" height="12.5" depth="0.5"
+material="src: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg8kjK403Bsofglx4YNp-o2y8gAoE4nwHlNQ&s">
+</a-box>
+
+ otra puerta
+<a-box position="0 4 -16" width="6" height="12.5" depth="0.5"
+material="src: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg8kjK403Bsofglx4YNp-o2y8gAoE4nwHlNQ&s">
+</a-box>
+
+      <!-- DERECHA -->
+      <a-box position="15 4.5 0" width="1" height="10" depth="30" color="#B0B0B0"></a-box>
+
+      <!-- IZQUIERDA -->
+      <a-box position="-15 4.5 0" width="1" height="10" depth="30" color="#B0B0B0"></a-box>
+
+      <!-- FRENTE (con puerta) -->
+      <a-box position="-9 4.5 15" width="12" height="10" depth="1" color="#B0B0B0"></a-box>
+      <a-box position="9 4.5 15" width="12" height="10" depth="1" color="#B0B0B0"></a-box>
+
+      PUERTA 
+      <a-box position="0 3 15.5" width="6" height="12.5" depth="0.5" color="#4B2E2E"></a-box>
+      
+     
+      TORRES 
+
+      Frontal izquierda
+      <a-cylinder position="-15 5 15" radius="2" height="12" color="#999"></a-cylinder>
+      <a-cone position="-15 13 15" radius-bottom="2.5" height="3.5" color="#5A2E0C"></a-cone>
+
+      Frontal derecha
+      <a-cylinder position="15 5 15" radius="2" height="12" color="#999"></a-cylinder>
+      <a-cone position="15 13 15" radius-bottom="2.5" height="3.5" color="#5A2E0C"></a-cone>
+
+      Trasera izquierda
+      <a-cylinder position="-15 5 -15" radius="2" height="12" color="#999"></a-cylinder>
+      <a-cone position="-15 13 -15" radius-bottom="2.5" height="3.5" color="#5A2E0C"></a-cone>
+
+      Trasera derecha
+      <a-cylinder position="15 5 -15" radius="2" height="12" color="#999"></a-cylinder>
+      <a-cone position="15 13 -15" radius-bottom="2.5" height="3.5" color="#5A2E0C"></a-cone>
+
+
+      PISO INTERIOR
+      <a-plane position="0 0.01 0" rotation="-90 0 0" width="31" height="31" color="#CCCCCC"></a-plane>
+
+      ALFOMBRA
+      <a-plane position="0 0.02 3" rotation="-90 0 0" width="5" height="18" color="red"></a-plane>
+
+      TECHO 
+      <a-plane position="0 9.5 0" rotation="90 0 0" width="30" height="30" color="#888888"></a-plane>
+
+      CIELO 
+      <a-sky color="#87CEEB"></a-sky>
+     
+
+
+ textura
+ 
+ ALFOMBRA
+<a-plane position="0 0.02 3" rotation="-90 0 0" width="5" height="18"
+material="src:https://st.depositphotos.com/1057689/58182/i/450/depositphotos_581821616-stock-photo-seamless-red-carpet-rug-texture.jpg "></a-plane>
+
+
+
+TORRES CON TEXTURA 
+
+<a-cylinder position="-15 5 15" radius="2" height="12"
+material="src: https://thumbs.dreamstime.com/b/textura-de-una-pared-piedra-fondo-del-castillo-antiguo-177488347.jpg; repeat: 2 2">
+</a-cylinder>
+
+<a-cylinder position="15 5 15" radius="2" height="12"
+material="src: https://thumbs.dreamstime.com/b/textura-de-una-pared-piedra-fondo-del-castillo-antiguo-177488347.jpg; repeat: 2 2">
+</a-cylinder>
+
+<a-cylinder position="-15 5 -15" radius="2" height="12"
+material="src: https://thumbs.dreamstime.com/b/textura-de-una-pared-piedra-fondo-del-castillo-antiguo-177488347.jpg; repeat: 2 2">
+</a-cylinder>
+
+<a-cylinder position="15 5 -15" radius="2" height="12"
+material="src: https://thumbs.dreamstime.com/b/textura-de-una-pared-piedra-fondo-del-castillo-antiguo-177488347.jpg; repeat: 2 2">
+</a-cylinder>
+
+puerta textura
+<a-box 
+position="0 3 15.5" 
+width="6" 
+height="12.5" 
+depth="0.5" 
+material="src: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg8kjK403Bsofglx4YNp-o2y8gAoE4nwHlNQ&s">
+</a-box>
+
+
+ SEGUNDA SALA GRANDE
+<a-plane position="0 0.5 -35" rotation="-90 0 0" width="40" height="40" color="#7A7A7A"></a-plane>
+
+
+<a-box position="20 6 -35" width="1" height="12" depth="40" color="#a26bb1"></a-box>
+<a-box position="-20 6 -35" width="1" height="12" depth="40" color="#3e558b"></a-box>
+
+<!-- ENTRADA DE LA SEGUNDA SALA -->
+<a-box position="-10 6 -15.5" width="20" height="12" depth="1" color="#1D2021"></a-box>
+<a-box position="10 6 -15.5" width="20" height="12" depth="1" color="#1D2021"></a-box>
+
+
+pared atras
+<a-box position="-10 6 -55" width="20" height="12" depth="1" color="#609E62"></a-box>
+<a-box position="10 6 -55" width="20" height="12" depth="1" color="#609E62"></a-box>
+
+<!-- TECHO -->
+<a-plane position="0 12 -35" rotation="90 0 0" width="40" height="40" color="#1F1F1F"></a-plane>
+
+TORRES ATRASS
+
+Trasera izquierda
+      <a-cylinder position="-19 5 -55" radius="2" height="14" color="#1F1F1F"></a-cylinder>
+      <a-cone position="-19 14 -55" radius-bottom="2.5" height="3.5" color="#5A2E0C"></a-cone>
+
+      Trasera derecha
+      <a-cylinder position="19 5 -55" radius="2" height="14" color="#1F1F1F"></a-cylinder>
+      <a-cone position="19 14 -55" radius-bottom="2.5" height="3.5" color="#5A2E0C"></a-cone>
+      
+      imagenes cuadro 1
+      
+      <a-plane 
+src="https://i.ibb.co/pjPPfRLs/dont-hug-me.jpg"
+position="-14.4 5 8"
+rotation="0 90 0"
+width="5"
+height="5">
+</a-plane>
+
+<a-plane 
+src="https://i.ibb.co/6cnT8p8h/di-cr.jpg"
+position="-14.4 5 0"
+rotation="0 90 0"
+width="5"
+height="5">
+</a-plane>
+
+
+ <a-plane 
+src="https://i.ibb.co/HpR0t99P/mrd.jpg"
+position="-14.4 5 -8"
+rotation="0 90 0"
+width="5"
+height="5">
+</a-plane>
+
+pared derecha
+medio
+<a-plane 
+src="https://i.ibb.co/N2V02CBG/was.jpg"
+position="14.4 5 0"
+rotation="0 -90 0"
+width="5"
+height="6">
+</a-plane>
+
+<a-plane 
+src="https://i.ibb.co/twrhnZMZ/omori.jpg"
+position="14.4 5 -7.5"
+rotation="0 -90 0"
+width="5"
+height="6">
+</a-plane>
+
+<a-plane 
+src="https://i.ibb.co/HD4pP24G/fran-bow.jpg"
+position="14.4 5 7.5"
+rotation="0 -90 0"
+width="5"
+height="6">
+</a-plane>
+
+Segundo cubo
+ izquierda
+ 
+ <a-plane 
+src="https://i.ibb.co/zT8bkZ9z/hk-1.jpg"
+position="-19.4 6 -21.5"
+rotation="0 90 0"
+width="6"
+height="8">
+</a-plane>
+
+<a-plane 
+src="https://i.ibb.co/Lzbdh3k9/hk2.jpg"
+position="-19.4 4 -28"
+rotation="0 90 0"
+width="5"
+height="5">
+</a-plane>
+
+<a-plane 
+src="https://i.ibb.co/jZ6QWcsD/hk-8.jpg"
+position="-19.4 9 -28"
+rotation="0 90 0"
+width="5"
+height="4">
+</a-plane>
+
+<a-plane 
+src="https://i.ibb.co/cXxmmTHX/hk4.jpg"
+position="-19.4 8 -33.5"
+rotation="0 90 0"
+width="5"
+height="5">
+</a-plane>
+
+<a-plane 
+src="https://i.ibb.co/dxcS3JN/hk-6.jpg"
+position="-19.4 3 -33.5"
+rotation="0 90 0"
+width="5"
+height="4">
+</a-plane>
+
+<a-plane 
+src="https://i.ibb.co/5XDkTR7q/hk-7.jpg"
+position="-19.4 7.5 -40"
+rotation="0 90 0"
+width="6"
+height="7">
+</a-plane>
+
+<a-plane 
+src="https://i.ibb.co/5xnyGDXp/hk-9.jpg"
+position="-19.4 6 -46.5"
+rotation="0 90 0"
+width="6"
+height="8">
+</a-plane>
+
+Pared trasera atras
+
+<a-plane 
+src="https://i.ibb.co/6jjtrCX/dr1.jpg"
+position="-13 6.5 -54.4"
+rotation="0 0 0"
+width="6"
+height="8">
+</a-plane>
+
+<a-plane 
+src="https://i.ibb.co/nMYKYZS6/dr2.jpg"
+position="-6 3 -54.4"
+rotation="0 0 0"
+width="7"
+height="4">
+</a-plane>
+
+<a-plane 
+src="https://i.ibb.co/xtCtKNtX/dr3.jpg"
+position="-6 8.5 -54.4"
+rotation="0 0 0"
+width="6"
+height="5.5">
+</a-plane>
+
+<a-plane 
+src="https://i.ibb.co/ptzGYJk/dr4.jpg"
+position="1.5 6 -54.4"
+rotation="0 0 0"
+width="6"
+height="8">
+</a-plane>
+
+<a-plane 
+src="https://i.ibb.co/tP4zPDTP/dr5.jpg"
+position="9 9 -54.4"
+rotation="0 0 0"
+width="7"
+height="4">
+</a-plane>
+
+<a-plane 
+src="https://i.ibb.co/KzGGWxg2/dr6.jpg"
+position="13 4.5 -54.4"
+rotation="0 0 0"
+width="7"
+height="4">
+</a-plane>
+
+pared cubo 2 derecha
+
+<a-plane 
+src="https://i.ibb.co/YFv6gr51/mb2.jpg"
+position="19.4 8.5 -47"
+rotation="0 -90 0"
+width="7"
+height="5">
+</a-plane>
+
+<a-plane 
+src="https://i.ibb.co/Y7MmDHR3/mb3.jpg"
+position="19.4 3.5 -47"
+rotation="0 -90 0"
+width="7"
+height="4">
+</a-plane>
+
+<a-plane 
+src="https://i.ibb.co/39V7V4K4/mb1.jpg"
+position="19.4 6 -40"
+rotation="0 -90 0"
+width="6"
+height="9">
+</a-plane>
+
+<a-plane 
+src="https://i.ibb.co/s9rWgQd2/mb4.jpg"
+position="19.4 6 -33.5"
+rotation="0 -90 0"
+width="6"
+height="9">
+</a-plane>
+
+<a-plane 
+src="https://i.ibb.co/QGSTxbv/mb-5.jpg"
+position="19.4 8.5 -27"
+rotation="0 -90 0"
+width="6"
+height="4">
+</a-plane>
+
+<a-plane 
+src="https://i.ibb.co/PSZJVQR/mb6.jpg"
+position="19.4 4 -27"
+rotation="0 -90 0"
+width="6"
+height="4">
+</a-plane>
+
+<a-plane 
+src="https://i.ibb.co/PvFHxhSn/mb7.jpg"
+position="19.4 8.5 -20.5"
+rotation="0 -90 0"
+width="6"
+height="5">
+</a-plane>
+
+
+texto
+cuadro 1
+
+<a-text 
+value="Series Indie"
+position="-14.3 9 0"
+rotation="0 90 0"
+align="center"
+color="black"
+width="20"
+font="https://cdn.aframe.io/fonts/mozillavr.fnt">
+</a-text>
+
+<a-text 
+value="Don't Hug Me I'm Scared"
+position="-14.3 2 8"
+rotation="0 90 0"
+align="center"
+color="black"
+width="12"
+font="https://cdn.aframe.io/fonts/Exo2Bold.fnt">
+</a-text>
+
+<a-text 
+value="The Amazing Digital Circus"
+position="-14.3 2 0"
+rotation="0 90 0"
+align="center"
+color="black"
+width="12"
+font="https://cdn.aframe.io/fonts/Exo2Bold.fnt">
+</a-text>
+
+<a-text 
+value="Murder Drones"
+position="-14.3 2 -8"
+rotation="0 90 0"
+align="center"
+color="black"
+width="12"
+font="https://cdn.aframe.io/fonts/Exo2Bold.fnt">
+</a-text>
+
+Lado drecho
+
+<a-text 
+value="Juegos Indie de Terror Psicológico"
+position="14.3 9.2 0"
+rotation="0 -90 0"
+align="center"
+color="black"
+width="20"
+font="https://cdn.aframe.io/fonts/mozillavr.fnt">
+</a-text>
+
+<a-text 
+value="Omori"
+position="14.3 1.5 -7.5"
+rotation="0 -90 0"
+align="center"
+color="black"
+width="18"
+font="https://cdn.aframe.io/fonts/Exo2Bold.fnt">
+</a-text>
+
+<a-text 
+value="Mouthwashing"
+position="14.3 1.5 0"
+rotation="0 -90 0"
+align="center"
+color="black"
+width="18"
+font="https://cdn.aframe.io/fonts/Exo2Bold.fnt">
+</a-text>
+
+<a-text 
+value="Fran Bow"
+position="14.3 1.5 7.5"
+rotation="0 -90 0"
+align="center"
+color="black"
+width="18"
+font="https://cdn.aframe.io/fonts/Exo2Bold.fnt">
+</a-text>
+
+
+preguntas
+<a-text 
+value="¿Que historia crees que responde a estas preguntas?\n\n¿Hasta que punto algo sigue siendo 'esa persona'?\n\n ¿El conocimiento puede reemplazarlo todo?\n\n¿Reprimir es controlar o ignorar?"
+position="-8 5 -14"
+align="center"
+color="black"
+width="10"
+font="https://cdn.aframe.io/fonts/Exo2Bold.fnt">
+</a-text>
+
+<a-text 
+value="Te invitamos a explorar estas historias.\n\n Si alguna te llamo la atencion, puedes ver la serie o probar los juegos.\n\nApoya a sus creadores y descubre nuevas experiencias."
+position="8 5 -14"
+align="center"
+color="black"
+width="9"
+font="https://cdn.aframe.io/fonts/Exo2Bold.fnt">
+</a-text>
+
+
+<a-text 
+value="El verano en que Hikaru murio. Este anime sigue a Yoshiki, quien nota que su mejor amigo Hikaru ya no es el mismo despues de desaparecer en la montaña. Aunque su cuerpo sigue igual, algo extraño lo rodea. La historia mezcla misterio, terror y emociones profundas. Habla del duelo, la negacion y el miedo a perder a alguien cercano. Tambien muestra como a veces nos aferramos a una version de alguien aunque sepamos que algo ha cambiado."
+position="-19.4 2.5 -40"
+rotation="0 90 0"
+align="center"
+color="white"
+width="5"
+font="https://cdn.aframe.io/fonts/Exo2Bold.fnt">
+</a-text>
+
+<a-text 
+value="Dr. Stone, la historia comienza cuando toda la humanidad se convierte en piedra misteriosamente. Miles de años despues, Senku despierta y decide reconstruir la civilización desde cero usando la ciencia. Promueve el valor del conocimiento, la logica y la perseverancia. Enseña que la ciencia puede ser una herramienta poderosa para avanzar y sobrevivir, incluso en las situaciones mas extremas."
+position="7 4.5 -54.3"
+rotation="0 0 0"
+align="center"
+color="white"
+width="5"
+font="https://cdn.aframe.io/fonts/Exo2Bold.fnt">
+</a-text>
+
+<a-text 
+value="Mob Psycho 100, Sigue a Mob, un chico con poderes psiquicos muy fuertes que intenta llevar una vida normal mientras controla sus emociones, ya que cuando pierde el control, su poder se desborda. Se centra en el crecimiento personal, la importancia de las emociones y la identidad. Muestra que el verdadero valor de una persona no esta en sus habilidades, sino en quien es como ser humano."
+position="19.4 4 -20.5"
+rotation="0 -90 0"
+align="center"
+color="white"
+width="7"
+font="https://cdn.aframe.io/fonts/Exo2Bold.fnt">
+</a-text>
+
+    </a-scene>
+  </body>
+</html>
